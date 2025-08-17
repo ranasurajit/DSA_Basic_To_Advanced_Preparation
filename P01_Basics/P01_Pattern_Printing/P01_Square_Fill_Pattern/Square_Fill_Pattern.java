@@ -1,12 +1,17 @@
 package P01_Basics.P01_Pattern_Printing.P01_Square_Fill_Pattern;
 
+import java.util.Scanner;
+
 public class Square_Fill_Pattern {
     public static void main(String[] args) {
         Square_Fill_Pattern solution = new Square_Fill_Pattern();
 
-        int n = 5;
-        char ch = '#';
+        Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
+        scn.nextLine();
+        char ch = scn.nextLine().charAt(0);
         solution.printPattern(n, ch);
+        scn.close();
     }
 
     /**
