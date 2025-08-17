@@ -19,6 +19,23 @@ public class Number_Increasing_Pyramid_Pattern {
         scn.close();
     }
 
+    /**
+     * Pattern needed:
+     * 
+     * 1
+     * 1 2
+     * 1 2 3
+     * 1 2 3 4
+     * 1 2 3 4 5
+     * 1 2 3 4 5 6
+     * 1 2 3 4 5 6 7
+     * 
+     * TC: O(N x N)
+     * SC: O(1)
+     * 
+     * @param n
+     * @param ch
+     */
     private String printPattern(int n, boolean hasSpaceSeparator) {
         StringBuilder sb = new StringBuilder();
         for (int i = 1; i <= n; i++) {
