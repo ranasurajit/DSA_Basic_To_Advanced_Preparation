@@ -20,6 +20,21 @@ public class Right_Half_Pyramid_Pattern {
         scn.close();
     }
 
+    /**
+     * Pattern needed:
+     * 
+     * #
+     * # #
+     * # # #
+     * # # # #
+     * # # # # #
+     * 
+     * TC: O(N x N)
+     * SC: O(1)
+     * 
+     * @param n
+     * @param ch
+     */
     private String printPattern(int n, char ch, boolean hasSpaceSeparator) {
         StringBuilder sb = new StringBuilder();
         for (int i = 1; i <= n; i++) {
