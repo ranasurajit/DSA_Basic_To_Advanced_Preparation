@@ -5,10 +5,25 @@ public class Square_Fill_Pattern {
         Square_Fill_Pattern solution = new Square_Fill_Pattern();
 
         int n = 5;
-        char ch = '*';
+        char ch = '#';
         solution.printPattern(n, ch);
     }
 
+    /**
+     * Pattern needed:
+     * 
+     * # # # # #
+     * # # # # #
+     * # # # # #
+     * # # # # #
+     * # # # # #
+     * 
+     * TC: O(N x N)
+     * SC: O(1)
+     * 
+     * @param n
+     * @param ch
+     */
     private void printPattern(int n, char ch) {
         System.out.println();
         for (int i = 0; i < n; i++) {
