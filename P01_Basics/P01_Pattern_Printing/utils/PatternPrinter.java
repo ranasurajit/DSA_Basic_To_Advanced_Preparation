@@ -36,4 +36,13 @@ public class PatternPrinter {
         System.out.println();
         System.out.println(CYAN + pattern);
     }
+
+    public static void print(int n, String pattern) {
+        System.out.println(RESET);
+        System.out.println(RED + "Input N : " + n + RESET);
+        System.out.println();
+        System.out.println(GREEN + "Output Pattern : " + RESET);
+        System.out.println();
+        System.out.println(YELLOW + pattern);
+    }
 }
