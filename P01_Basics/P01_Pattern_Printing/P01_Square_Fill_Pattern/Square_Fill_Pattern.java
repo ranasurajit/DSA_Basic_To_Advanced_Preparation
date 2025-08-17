@@ -44,7 +44,7 @@ public class Square_Fill_Pattern {
                     sb.append(' ');
                 }
             }
-            sb.append("\n");
+            sb.append('\n');
         }
         return sb.toString();
     }
