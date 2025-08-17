@@ -26,4 +26,14 @@ public class PatternPrinter {
         System.out.println();
         System.out.println(PURPLE + pattern);
     }
+
+    public static void print(int n, boolean hasSpaceSeparator, String pattern) {
+        System.out.println(RESET);
+        System.out.println(RED + "Input N : " + n + RESET);
+        System.out.println(RED + "Input Include Space ? : " + hasSpaceSeparator + RESET);
+        System.out.println();
+        System.out.println(GREEN + "Output Pattern : " + RESET);
+        System.out.println();
+        System.out.println(CYAN + pattern);
+    }
 }
