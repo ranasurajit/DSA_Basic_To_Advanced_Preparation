@@ -2,6 +2,8 @@ package P01_Basics.P01_Pattern_Printing.P01_Square_Fill_Pattern;
 
 import java.util.Scanner;
 
+import P01_Basics.P01_Pattern_Printing.utils.PatternPrinter;
+
 public class Square_Fill_Pattern {
     public static void main(String[] args) {
         Square_Fill_Pattern solution = new Square_Fill_Pattern();
@@ -10,7 +12,11 @@ public class Square_Fill_Pattern {
         int n = scn.nextInt();
         scn.nextLine();
         char ch = scn.nextLine().charAt(0);
-        solution.printPattern(n, ch);
+        boolean hasSpaceSeparator = scn.nextBoolean();
+
+        String pattern = solution.printPattern(n, ch, hasSpaceSeparator);
+        PatternPrinter.print(n, ch, hasSpaceSeparator, pattern);
+
         scn.close();
     }
 
@@ -29,13 +35,17 @@ public class Square_Fill_Pattern {
      * @param n
      * @param ch
      */
-    private void printPattern(int n, char ch) {
-        System.out.println();
+    private String printPattern(int n, char ch, boolean hasSpaceSeparator) {
+        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                System.out.print(ch + " ");
+                sb.append(ch);
+                if (hasSpaceSeparator) {
+                    sb.append(' ');
+                }
             }
-            System.out.println();
+            sb.append("\n");
         }
+        return sb.toString();
     }
 }
