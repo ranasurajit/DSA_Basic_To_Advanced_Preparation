@@ -22,7 +22,7 @@ public class Triangle_Star_Pattern {
     /**
      * Pattern needed:
      * 
-     *.       & 
+     *        & 
      *       & & 
      *      & & & 
      *     & & & & 
