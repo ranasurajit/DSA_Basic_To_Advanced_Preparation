@@ -45,4 +45,14 @@ public class PatternPrinter {
         System.out.println();
         System.out.println(YELLOW + pattern);
     }
+
+    public static void print(int n, char ch, String pattern) {
+        System.out.println(RESET);
+        System.out.println(RED + "Input N : " + n + RESET);
+        System.out.println(RED + "Input Character : " + ch + RESET);
+        System.out.println();
+        System.out.println(GREEN + "Output Pattern : " + RESET);
+        System.out.println();
+        System.out.println(YELLOW + pattern);
+    }
 }
